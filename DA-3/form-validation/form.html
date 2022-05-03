@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login-Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <h1>IT Job Application Form</h1>
+
+
+    <form id = "loginForm" name="loginForm" onsubmit="returnFalse()">
+        <div id="formInputs">
+            <label for="fname">Enter First Name</label>
+            <input type="text" name="fname" id="fname">
+            <span id="fnameError" class="error"></span>
+
+            <br>
+
+            <label>Enter Last Name</label>
+            <input type="text" name="lname" id="lname">
+            <span id="lnameError" class="error"></span>
+
+            <br>
+            <label>Choose Gender</label>
+            <div id="genderDiv">
+                <input type="radio" id="male" name="gender"><span>Male</span> 
+                <input type="radio" id="female" name="gender"><span>Female</span>
+            </div>
+            <span id="genderError" class="error"></span>
+
+            <br>
+
+            <label>Select Qualification</label>
+            <select name="qualification" id="qualification">
+                <option value="High School">High School</option>
+                <option value="Diploma">Diploma</option>
+                <option value="Bachelors">Bachelors</option>
+                <option value="Masters">Masters</option>
+                <option value="phd">PHD</option>
+            </select>
+            <span id="qualificationError" class="error"></span>
+
+            <br>
+
+            <label>Enter Age</label>
+            <input type="number" name="age" id="age">
+            <span id="ageError" class="error"></span>
+
+            <br>
+
+            <label>Enter Email</label>
+            <input type="text" name="email" id="email">
+            <span id="emailError" class="error"></span>
+
+            <br>
+
+            <label>Enter Username</label>
+            <input type="text" name="username" id="username">
+            <span id="usernameError" class="error"></span>
+
+            <br>
+
+            <label>Enter Password</label>
+            <input id="password" type="password" name="password">
+            <span id="passwordError" class="error"></span>
+
+            <br>
+            <input type="button" onclick="validateInput()" value="Submit">
+        </div>
+
+    </form>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

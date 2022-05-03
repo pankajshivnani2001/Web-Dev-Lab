@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Handlers</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Event Handlers Page</h1>
+
+    <div class="onClickEvent event">
+        <h2>This Section Uses the OnClick Event Of JavaScript</h1>
+        <h2 style="font-size: 20px;" id="onClickEventText" onclick="changeColor(this.id)">Click Me to Change My Color To Red</h2>
+    </div>
+
+    <div class="hoverEvent event">
+        <h2>This Section Uses the OnMouseOver Event</h2>
+        <h2 id="hoverEventText" onmouseover="increaseSize(this.id)">Hover Over Me to Enlarge Me</h2>
+        <button class="hoverEventButton" onclick="decreaseSize('hoverEventText')">Click Me to Decrease the Size of above heading</button>
+    </div>
+    
+    <div class="focusEvent event">
+        <h2>This Section Demonstrates the OnFocus and OnBlur Event</h2>
+        <div id="username">
+            <span>Bring Focus On This Field to Hide the Below Field</span>
+            <input type="text" onfocus="hidePassword()" onblur="showPassword()" placeholder="Enter Username">
+        </div>
+        
+        
+        <div id="password">
+            <span>Bring Focus On This Field to Hide the Above Field</span>
+            <input type="password" onfocus="hideUsername()" onblur="showUsername()" placeholder="Enter Password">
+        </div>
+    </div>
+
+    <div class="onKeyDownEvent event">
+        <h2>This Section Uses the OnKeyDown Event on the Entire Document</h2>
+        <h3>Press Space bar to start the animation and Esc Key to Pause the Animation</h3>
+
+
+        <div id="animation">
+            <span id="circle"></span>
+        </div>
+    </div>
+    
+    <div id="randomColorContainer" class="event" ondblclick="randomColorSelector()">
+        <h2>This Section Uses the OnDoubleClick Event</h2>
+        <h3>Double Click In This Area To Change the Background to a Random Color</h3>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>

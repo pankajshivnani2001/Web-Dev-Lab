@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="practice.js"></script>
+    <title>Document</title>
+
+</head>
+
+<body id="body">
+
+    <form name="calculatorForm">
+        <span>Enter First Variable</span>
+        <input type="text" name="var1">
+
+        <br>
+
+        <span>Enter First Variable</span>
+        <input type="text" name="var2">
+
+        <br>
+
+        <input type="checkbox" id="add">Add
+        <input type="checkbox" id="subtract">subtract
+        <input type="checkbox" id="multiply">multiply
+        <input type="checkbox" id="divide">divide
+        <input type="checkbox" id="modulo">modulo
+        <br>
+        <input type="button" onclick="performCalculation()" value="Submit">
+    </form>
+
+    <p id="addRes"></p>
+    <p id="subtractRes"></p>
+    <p id="multiplyRes"></p>
+    <p id="divideRes"></p>
+    <p id="moduloRes"></p>
+
+</body>
+</html>

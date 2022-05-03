@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<class>
+    <Transaction transactionId="t101" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"  xsi:schemaLocation="transactionSchema.xsd">
+        <ID>
+            <OrderId> 1001 </OrderId>
+            <CustomerId> 791 </CustomerId>
+        </ID>
+        <PaymentInfo>
+            <Amount> 500 </Amount>
+            <ModeOfPayment> Net Banking </ModeOfPayment>
+            <Status> Successful </Status>
+        </PaymentInfo>
+    </Transaction>
+
+    <Transaction transactionId="t201" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"  xsi:schemaLocation="transactionSchema.xsd">
+        <ID>
+            <OrderId> 1002 </OrderId>
+            <CustomerId> 167 </CustomerId>
+        </ID>
+        <PaymentInfo>
+            <Amount> 151 </Amount>
+            <ModeOfPayment> Credit Card </ModeOfPayment>
+            <Status> Successful </Status>
+        </PaymentInfo>
+    </Transaction>
+
+    <Transaction transactionId="t301" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"  xsi:schemaLocation="transactionSchema.xsd">
+        <ID>
+            <OrderId> 1003 </OrderId>
+            <CustomerId> 231 </CustomerId>
+        </ID>
+        <PaymentInfo>
+            <Amount> 23 </Amount>
+            <ModeOfPayment> Cash </ModeOfPayment>
+            <Status> Failed </Status>
+        </PaymentInfo>
+    </Transaction>
+
+     <Transaction transactionId="t301" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"  xsi:schemaLocation="transactionSchema.xsd">
+        <ID>
+            <OrderId> 1004 </OrderId>
+            <CustomerId> 231 </CustomerId>
+        </ID>
+        <PaymentInfo>
+            <Amount> 50 </Amount>
+            <ModeOfPayment> Cash </ModeOfPayment>
+            <Status> Successful </Status>
+        </PaymentInfo>
+    </Transaction>
+
+</class>
